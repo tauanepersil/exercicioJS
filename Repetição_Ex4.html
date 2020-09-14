@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*Uma rainha requisitou os serviços de um monge, o qual exigiu o pagamento em grãos
+de trigo da seguinte maneira: os grãos de trigo seriam dispostos em um tabuleiro de
+xadrez, de tal forma que a primeira casa do tabuleiro tivesse um grão, e as casas
+seguintes o dobro da anterior. Construa um algoritmo que calcule quantos grãos de
+trigo a Rainha deverá pagar ao monge. OBS: Xadrez tem 64 casas.
+
+
+    var numeroDeGraos = 1
+    var quantidadeCasas = 64
+    
+    for(var contador = 2; contador <= quantidadeCasas; contador++){
+        numeroDeGraos = numeroDeGraos * contador
+    }
+    console.log(`o numero é ${numeroDeGraos}`)*/
+
+    var numeroDeGraos = 1
+    var quantidadeCasas = 64
+    var resultadoFinal = 0
+
+    for (contador = 1; contador <= quantidadeCasas; contador++){
+        resultadoFinal = numeroDeGraos * 2
+        numeroDeGraos = resultadoFinal 
+        console.log(`O monge irá receber ${resultadoFinal} de grãos`) }
+
+    </script>
+</body>
+</html>

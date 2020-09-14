@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*Construa um algoritmo que receba um número inteiro e verifique se o mesmo é primo*/
+
+    var numero= window.prompt(`Digite um número inteiro:`); 
+    var numeroDeDivisores = 0;
+        
+        for(var contador = 1; contador <= numero; contador++){
+            if(numero % contador == 0){
+                numeroDeDivisores++
+            }
+        }
+
+      if(numeroDeDivisores == 2){
+          console.log('O número é primo')
+      } else {
+        console.log('O número não é primo')
+      }
+
+    </script>
+</body>
+</html>

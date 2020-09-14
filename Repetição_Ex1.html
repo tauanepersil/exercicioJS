@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+/*Criar um algoritmo que leia os limites inferior e superior de um intervalo e imprima
+todos os números pares no intervalo aberto e seu somatório. Suponha que os
+números digitados são um intervalo crescente. Exemplo: Limite inferior: 3 Limite
+superior: 12 Saída: 4 6 8 10 Soma: 28*/
+
+        var somaDosPares = 0;
+        var limiteInferior = parseInt(window.prompt('Digite o Limite Inferior:'));
+        var limiteSuperior = parseInt(window.prompt('Digite o Limite Superior:'));
+         
+       while(limiteInferior < limiteSuperior){
+       if(limiteInferior % 2 == 0){
+           somaDosPares = somaDosPares + parseInt(limiteInferior)           
+       }
+	     limiteInferior++
+    }
+        console.log(`a soma dos números pares são ${somaDosPares}`)
+
+
+    </script>
+</body>
+</html>

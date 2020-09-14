@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*Escrever um algoritmo que leia o nome e as três notas obtidas por um aluno durante o
+semestre. Calcular a sua média (aritmética), informar o nome e sua menção aprovado
+(media >= 7), Reprovado (media <= 5) e Recuperação (media entre 5.1 a 6.9)*/
+
+      var totalNotas = 3;
+      var somaDasNotas = 0;
+      var nomeDoAluno = window.prompt('Digite seu nome:');
+      var valorNotaDigitada = 0;
+      var notaAtual = 1;
+      var mediaDasNotas = 0
+      while (notaAtual <= totalNotas){
+          valorNotaDigitada = window.prompt(`Qual é sua nota ${notaAtual}?`);
+          somaDasNotas = somaDasNotas + parseInt(valorNotaDigitada);
+          mediaDasNotas = somaDasNotas / totalNotas;
+          notaAtual++
+      }
+            console.log(`Nome do Aluno: ${nomeDoAluno}`);
+            console.log(`Média das Notas: ${mediaDasNotas}`);
+
+      if(mediaDasNotas >= 7){
+          console.log('Aprovado')
+      }
+
+      if(mediaDasNotas <= 6.9 && mediaDasNotas >= 5.1){
+          console.log('Recuperação')
+      }
+      
+      if(mediaDasNotas <= 5 ){
+          console.log('Reprovado')
+      }
+    </script>
+</body>
+</html>
